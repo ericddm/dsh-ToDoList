@@ -1,5 +1,6 @@
 # dsh-ToDoList · 项目进度管理器
 
+(./ScreenShot.png)
 把一块**看板 + 甘特图**的项目进度管理器挂进 DeepSeek Harness（DSH）的左边栏，点开即用，数据存在本地。
 
 > 插件名 `dsh-todolist`，侧栏入口名 **ToDoList**（面板标题仍是「项目进度管理器」）。单文件 HTML、零依赖、零网络请求。

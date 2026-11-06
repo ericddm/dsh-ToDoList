@@ -1,6 +1,6 @@
 # dsh-ToDoList · 项目进度管理器
 
-把一块**看板 + 甘特图**的项目进度管理器挂进 DeepSeek Harness（DSH）的左边栏——就在「日程」下面，点开即用，数据存在本地。
+把一块**看板 + 甘特图**的项目进度管理器挂进 DeepSeek Harness（DSH）的左边栏，点开即用，数据存在本地。
 
 > 插件名 `dsh-todolist`，侧栏入口名 **ToDoList**（面板标题仍是「项目进度管理器」）。单文件 HTML、零依赖、零网络请求。
 
@@ -16,7 +16,7 @@
 ## 安装
 
 前置条件：DSH 客户端（桌面版或带 Web 前端的版本，需要宿主提供 `webServer` 服务）+ Node.js `^22.19.0 || >=24.0.0`。
-
+可以直接让DSH安装github.com/ericddm/dsh-ToDoList.git，也可以按如下步骤手动操作。
 **1. 拿到代码**
 
 ```bash

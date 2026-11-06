@@ -1,0 +1,57 @@
+{
+  "name": "dsh-todolist",
+  "version": "0.1.0",
+  "description": "把自制的看板 / 甘特图项目进度管理器挂进 DeepSeek Harness 左侧栏：一个侧栏入口 + 同源 iframe，数据只留在本机。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "config.example.json"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "todo",
+    "kanban",
+    "gantt"
+  ],
+  "author": "ericddm",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericddm/dsh-ToDoList.git"
+  },
+  "homepage": "https://github.com/ericddm/dsh-ToDoList#readme",
+  "bugs": {
+    "url": "https://github.com/ericddm/dsh-ToDoList/issues"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs && node test/bridge-dom.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ],
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  }
+}
